@@ -4,10 +4,9 @@ var RCE = React.createElement;
 
 var render = function() {
     ReactDOM.render(
-        RCE('h5', {}, 'bacon'),
+        RCE('h5', {}, ''),
         document.getElementById('react-app')
     );
-    console.log('re-rendered');
 }
 
 var initialState = {};
