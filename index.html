@@ -11,35 +11,63 @@
 </head>
 <body>
 <div class='section hero' id='react-app'>
-
 </div>
-
 <div class='section hero' id='sample'>
-    <h1>Sample Version of Uploader</h1>
-    <form>
-        <input type='text' name='fields-from-excel' />
-        <input type='submit' value='Try' class='button-primary' />
-    </form>
     <div class='container'>
         <div class='row'>
-            <ul>
-                <li>
-                    <span>Customer</span>
-                    <span><select /></span>
-                </li>
-                <li>
-                    <span>Customer</span>
-                    <span><select /></span>
-                </li>
-                <li>
-                    <span>Customer</span>
-                    <span><select /></span>
-                </li>
-                <li>
-                    <span>Customer</span>
-                    <span><select /></span>
-                </li>
-            </ul>
+            <h1>Sample Version of Uploader</h1>
+            <form class='twelve columns'>
+                <textarea class='u-full-width' name='fields-from-excel'></textarea>
+                <input type='submit' value='Try' class='button-primary' />
+            </form>
+            <table class='u-full-width'>
+                <thead>
+                    <tr>
+                        <th>Column Title From Excel</th>
+                        <th>Field To Save As</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Customer</td>
+                        <td><select class='u-full-width'><option></option></select></td>
+                    </tr>
+                    <tr>
+                        <td>Scac</td>
+                        <td><select class='u-full-width'><option></option></select></td>
+                    </tr>
+                    <tr>
+                        <td>Pro #</td>
+                        <td><select class='u-full-width'><option></option></select></td>
+                    </tr>
+                    <tr>
+                        <td>BOL</td>
+                        <td><select class='u-full-width'><option></option></select></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id='required' class='twelve columns'>
+                <h6><strong>Required</strong></h6>
+                <ul>
+                    <li class='row'>
+                        <div class='six columns'>Name</div>
+                        <div class='six columns'>
+                            <input type='text' class='u-full-width' />
+                        </div>
+                    </li>
+                    <li class='row'>
+                        <div class='six columns'>Scac</div>
+                        <div class='six columns'>
+                            <select class='u-full-width disabled' disabled>
+                                <option>First One</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class='twelve columns'>
+                <input type='submit' class='button' value='Save Template' />
+            </div>
         </div>
     </div>
 </div>
@@ -47,6 +75,10 @@
 <style>
 ul {
     list-style-type: none;
+}
+
+.disabled {
+    background-color: #DDD;
 }
 </style>
 
